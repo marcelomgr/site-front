@@ -1,15 +1,18 @@
 <template>
     
     <main>
-        <div class="text-top">Videos novos toda quinta as 20 horas</div>
+        <!-- <div class="text-top">Videos novos toda quinta as 20 horas</div>
 
         <a href="http://www.google.com" target="_blank">
             <img alt="Inscreva-se" id="subscribe" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/subscribe.svg">
         </a>
 
-        <div class="text-bottom">youtube.com/...</div>
+        <div class="text-bottom">youtube.com/...</div> -->
 
         <div>
+            <div>
+              <input v-model="inputValue" class="my-input" placeholder="Digite algo aqui">
+            </div>
             <div class="form-group">
                 <label class="font-weight-bold">De:</label>
                 <v-select class="selectDefault" v-model="selectedOption" :options="options" placeholder="Selecione um Grupo"></v-select>
@@ -35,14 +38,15 @@ export default{
   },
   data() {
     return {
-      selectedOption: 'opcao1',
+    //   selectedOption: 'opcao1',
       options: [
         { label: 'Opção 1', value: 'opcao1' },
         { label: 'Opção 2', value: 'opcao2' },
         { label: 'Opção 3', value: 'opcao3' },
         { label: 'Opção 4', value: 'opcao4' },
         { label: 'Opção 5', value: 'opcao5' },
-      ]
+      ],
+      inputValue: ''
     }
   }
 }
@@ -51,6 +55,14 @@ export default{
 </script>
 
 <style scoped>
+
+.my-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
 
 .my-select {
   min-width: 500px;
