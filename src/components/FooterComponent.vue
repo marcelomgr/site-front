@@ -5,6 +5,12 @@
             <img alt="Linkedin" title="Linkedin" src="../assets/linkedin_logo.png">
             <!-- <img alt="Linkedin" title="Linkedin" src="..\src\assets\linkedin_logo.png"> -->
         </a>
+
+        <a class="socialLink" target="_blank" href="https://github.com/marcelomgr">
+            <img alt="GitHub" title="Github" src="../assets/github_logo.png">
+            <!-- <img alt="Linkedin" title="Linkedin" src="..\src\assets\linkedin_logo.png"> -->
+        </a>
+
         <!-- <a class="socialLink" v-for="(socialLink,index) in socialLinks" :key="index" :href="socialLink.link" target="_blank">
             <img :alt="socialLink.label" :title="socialLink.label" :src="socialLink.icon">
         </a> -->
