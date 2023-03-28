@@ -8,18 +8,57 @@
         </a>
 
         <div class="text-bottom">youtube.com/...</div>
+
+        <div>
+            <div class="form-group">
+                <label class="font-weight-bold">De:</label>
+                <v-select class="selectDefault" v-model="selectedOption" :options="options" placeholder="Selecione um Grupo"></v-select>
+            </div>
+            <div class="form-group">
+                <label class="font-weight-bold">Para:</label>
+                <v-select class="selectDefault" v-model="selectedOption" :options="options" placeholder="Selecione um Grupo"></v-select>
+            </div>
+        </div>
+
     </main>
 </template>
 
 <script>
+
+import vSelect from 'vue-select';
+import 'vue-select/dist/vue-select.css';
+
 export default{
-    name: 'HomeComponent'
+    name: 'HomeComponent',
+    components: {
+    'v-select': vSelect
+  },
+  data() {
+    return {
+      selectedOption: 'opcao1',
+      options: [
+        { label: 'Opção 1', value: 'opcao1' },
+        { label: 'Opção 2', value: 'opcao2' },
+        { label: 'Opção 3', value: 'opcao3' },
+        { label: 'Opção 4', value: 'opcao4' },
+        { label: 'Opção 5', value: 'opcao5' },
+      ]
+    }
+  }
 }
 
 
 </script>
 
 <style scoped>
+
+.my-select {
+  min-width: 500px;
+}
+
+.selectDefault{
+    width: 200px !important;
+}
 
 main{
     background-color: var(--color-background-home);
