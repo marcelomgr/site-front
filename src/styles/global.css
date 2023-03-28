@@ -59,6 +59,8 @@ main{
 
 .card-title {
   margin: 0;
+  font-weight: bold;
+  font-size: x-large;
 }
 
 .card-body {
@@ -157,4 +159,36 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.panel-default {
+  width: 60%;
+  background-color: #3b3b3b;
+  border-radius: 15px;
+  border: 1px solid #696969;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.158);
+  text-align: -webkit-center;
+}
+
+.title-default{
+  color:#fff;
+  padding: 15px;
+}
+
+.text-default {
+  color:#fff;
+  padding: 25px;
+  
+}
+
+.align-text-obs{
+  text-align-last: start;
+}
+
+.align-text-title-obs{
+  padding: 25px;
+  padding-bottom: 0;
+  text-align-last: start;
+  font-size: x-large;
+  color:#fff;
 }

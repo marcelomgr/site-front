@@ -1,39 +1,49 @@
 <template>
     <main>
         <loading-personalizado :active="isLoading"></loading-personalizado>
-        <div class="card">
-            <div class="card-header">
-                <div class="card-title">Converter Unidade de Medida</div>
-            </div>
-            <div class="card-body">
-                <!-- <div class="text-top">Videos novos toda quinta as 20 horas</div>
-                
-                <a href="http://www.google.com" target="_blank">
-                    <img alt="Inscreva-se" id="subscribe" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/subscribe.svg">
-                </a>
-            
-                <div class="text-bottom">youtube.com/...</div> -->
-            
-                <div>
-                    <div>
-                        <label class="text-field">Valor:</label>
-                      <input v-model="inputValue" class="input-text-default" placeholder="Digite o valor">
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <label class="text-field">De:</label>
-                        <v-select class="custom-select" :options="options" placeholder="Selecione a Unidade"></v-select>
-                    </div>
-                    <br>
-                    <div class="form-group">
-                        <label class="text-field">Para:</label>
-                        <v-select class="custom-select" :options="options" placeholder="Selecione a Unidade"></v-select>
-                    </div>
-                    <br>
-                    <button class="btn-primary-default" @click="resultado">Converter agora!</button>
+        
+        <div class="panel-default">
+            <h2 class="title-default">Digite os dados para converter</h2>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Converter</div>
                 </div>
-            
+                <div class="card-body">
+                    <!-- <div class="text-top">Videos novos toda quinta as 20 horas</div>
+                    
+                    <a href="http://www.google.com" target="_blank">
+                        <img alt="Inscreva-se" id="subscribe" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/subscribe.svg">
+                    </a>
+                
+                    <div class="text-bottom">youtube.com/...</div> -->
+                
+                    <div>
+                        <div>
+                            <label class="text-field">Valor:</label>
+                          <input v-model="inputValue" class="input-text-default" placeholder="Digite o valor">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="text-field">De:</label>
+                            <v-select class="custom-select" :options="options" placeholder="Selecione"></v-select>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="text-field">Para:</label>
+                            <v-select class="custom-select" :options="options" placeholder="Selecione"></v-select>
+                        </div>
+                        <br>
+                        <button class="btn-primary-default" @click="resultado">Converter agora!</button>
+                    </div>
+                
+                </div>
             </div>
+
+            <p class="align-text-title-obs">Para fazer a conversão siga esses passos:</p> 
+            <p class="align-text-obs text-default">
+ - Digite o valor que será convertido<br> - Selecione a unidade de medida atual do valor<br> - Selecione a unidade de medida final (que você quer descobrir)<br> - Clique em "Converter Agora!"
+            </p>
+            
         </div>
     </main>
 </template>

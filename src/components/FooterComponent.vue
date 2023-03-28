@@ -28,7 +28,7 @@ export default{
         }
     },
     mounted(){
-        api.get('/social-links.json').then(response => {
+        api.get('/GetAllUnidadesMedidaDistancia').then(response => {
             this.socialLinks = response.data;
         })
     }

@@ -70,10 +70,10 @@
      */
 
      #logo{
-        width: 104px;
+        width: 96px;
         /* width: 130px; */
     }
-    
+
     #menu-button{
         width: 30px;
     }
