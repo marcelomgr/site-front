@@ -7,7 +7,7 @@
         </a>
 
         <a class="socialLink" target="_blank" href="https://github.com/marcelomgr">
-            <img alt="GitHub" title="Github" src="../assets/github_logo.png">
+            <img alt="GitHub" title="Github" src="../assets/github_logo.png" style="width: 36px;">
             <!-- <img alt="Linkedin" title="Linkedin" src="..\src\assets\linkedin_logo.png"> -->
         </a>
 

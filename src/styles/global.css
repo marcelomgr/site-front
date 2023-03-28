@@ -113,3 +113,48 @@ main{
   display: inline-block;
   font-size: larger;
 }
+
+.btn-primary-default {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-primary-default:hover {
+  background-color: #0069d9;
+}
+
+@media (min-width: 500px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    flex-direction: column;
+  }
+}
+
+#loading-personalizado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
