@@ -3,15 +3,16 @@
     <header>
         <nav class="container">
             <a href="/">
-                <img alt="WDEV" id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg">
+                <img alt="WDEV" id="logo" src="../assets/MRico.png">
+                <!-- <img alt="WDEV" id="logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg"> -->
             </a>
-
+            <!-- src\assets\mrico.png -->
             <img v-on:click="openMenu" alt="Abrir menu" id="menu-button" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/menu.svg">
 
             <div v-on:click="closeMenu" id="menu-overlay" v-if="menuActive"></div>
             <div id="menu-items" :class="{active:menuActive}">
 
-                <img alt="WDEV" id="menu-logo" src="https://raw.githubusercontent.com/william-costa/wdev-mock-site-resources/master/assets/images/wdev.svg">
+                <img alt="WDEV" id="menu-logo" src="../assets/MRico.png">
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/videos">Vídeo</a></li>
@@ -63,8 +64,14 @@
         align-items: center;
     }
 
-    #logo{
+    /* #logo{
         width: 130px;
+    }
+     */
+
+     #logo{
+        width: 104px;
+        /* width: 130px; */
     }
     
     #menu-button{
